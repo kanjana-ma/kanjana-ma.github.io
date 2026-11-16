@@ -5,147 +5,174 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kanjana Maenyam - Portfolio</title>
 <style>
-       body {
-           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-           line-height: 1.6;
-           color: #333;
-           background-color: #f4f7f6;
-           margin: 0;
-           padding: 30px;
-       }
-       .resume-container {
-           max-width: 850px;
-           margin: 0 auto;
-           background: #ffffff;
-           padding: 40px;
-           border-radius: 12px;
-           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-       }
-       .header {
-           display: flex;
-           align-items: center;
-           border-bottom: 3px solid #0056b3;
-           padding-bottom: 25px;
-           margin-bottom: 25px;
-       }
-       .profile-img {
-           width: 150px;
-           height: 150px;
-           border-radius: 50%;
-           object-fit: cover;
-           margin-right: 35px;
-           border: 4px solid #0056b3;
-       }
-       .header-info h1 {
-           margin: 0 0 5px 0;
-           color: #222;
-           font-size: 28px;
-       }
-       .header-info p {
-           margin: 4px 0;
-           color: #555;
-           font-size: 15px;
-       }
-       .contact-links {
-           margin-top: 10px;
-       }
-       .contact-links a {
-           color: #0056b3;
-           text-decoration: none;
-           margin-right: 15px;
-           font-weight: 600;
-           font-size: 14px;
-       }
-       .contact-links a:hover {
-           text-decoration: underline;
-       }
-       section {
-           margin-bottom: 25px;
-       }
-       h2 {
-           color: #0056b3;
-           border-bottom: 2px solid #eaeaea;
-           padding-bottom: 6px;
-           font-size: 18px;
-           text-transform: uppercase;
-           letter-spacing: 0.5px;
-       }
-       .item-title {
-           font-weight: bold;
-           color: #333;
-       }
-       .item-subtitle {
-           color: #666;
-           font-style: italic;
-           font-size: 14px;
-           margin-bottom: 5px;
-       }
-       ul {
-           padding-left: 20px;
-           margin-top: 5px;
-       }
-       li {
-           margin-bottom: 6px;
-           color: #444;
-           font-size: 14px;
-       }
-       .skills-grid {
-           display: flex;
-           flex-wrap: wrap;
-           gap: 8px;
-           margin-top: 8px;
-       }
-       .skill-tag {
-           background: #eef3f8;
-           color: #0056b3;
-           padding: 6px 12px;
-           border-radius: 6px;
-           font-size: 13px;
-           font-weight: 600;
-       }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 30px;
+        }
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 35px;
+            border: 4px solid #0056b3;
+        }
+        .header-info h1 {
+            margin: 0 0 5px 0;
+            color: #222;
+            font-size: 28px;
+        }
+        .header-info p {
+            margin: 4px 0;
+            color: #555;
+            font-size: 15px;
+        }
+        .contact-links {
+            margin-top: 10px;
+        }
+        .contact-links a {
+            color: #0056b3;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 6px;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .item-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .item-subtitle {
+            color: #666;
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        li {
+            margin-bottom: 6px;
+            color: #444;
+            font-size: 14px;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .skill-tag {
+            background: #eef3f8;
+            color: #0056b3;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+        }
 </style>
 </head>
 <body>
 <div class="resume-container">
-<!-- Header: รูป และ ข้อมูลชื่อ-สกุล -->
+<!-- Header: รูป และ ข้อมูลชื่อ-สกุล (สะอาดตา ไม่มีวันเกิดกวนใจด้านบน) -->
 <div class="header">
-<!-- ใส่ชื่อไฟล์รูปภาพของคุณตรง src (เช่น profile.jpg หรืออัปโหลดรูปไว้คู่กัน) -->
-<img src="profile.jpg" alt="Kanjana Maenyam" class="profile-img">
+<img src="Image.jpg" alt="Kanjana Maenyam" class="profile-img">
 <div class="header-info">
 <h1>Kanjana Maenyam</h1>
 <p><strong>Undergraduate Student in Data Science and Applications</strong></p>
 <p>School of Information and Communication Technology, University of Phayao</p>
 <div class="contact-links">
-<a href="kanjana.manjam@gmail.com">✉ Email Me</a>
-<a href="https://github.com/kanjana" target="_blank">🔗 GitHub Profile</a>
+<a href="mailto:kanjana.manjam@gmail.com">✉ kanjana.manjam@gmail.com</a>
+<a href="https://github.com/kanjana-ma" target="_blank">🔗 GitHub Profile kanjana-ma</a>
 </div>
 </div>
 </div>
-<!-- Education (ข้อมูลการศึกษา) -->
+
+<!-- Education (ข้อมูลการศึกษา และวันเกิด) -->
 <section>
+
+<p> <strong>Date of Birth:</strong> November 7, 2007</p>
+<br>
 <h2>Education</h2>
-<div class="item-title">Bachelor of Science in Computer Science</div>
-<div class="item-subtitle">University of Phayao | 2025 – Present</div>
+<div class="item-title">Bachelor of Science in Data Science and Applications</div>
+<div class="item-subtitle">University of Phayao </div>
 <ul>
-<li>Focusing on software development, database systems, data science, and modern web applications.</li>
+<li>Focusing on data science, analytics, database systems, and modern web applications.</li>
+</ul>
+
+<br>
+<div class="item-title">High School Education</div>
+<div class="item-subtitle">[Thoeng Witthayakhom School]| 2025</div>
+<ul>
+<li>Completed high school program (Science-Mathematics Program).</li>
 </ul>
 </section>
+
 <!-- Experience (ประสบการณ์) -->
+<!-- Academic Projects -->
 <section>
-<h2>Experience & Projects</h2>
+<h2>Academic Projects</h2>
+
+<!-- Project 1: Database Management -->
 <div class="item-title">Database Management System Project</div>
-<div class="item-subtitle">Vehicle Rental System (2026)</div>
+<div class="item-subtitle">Vehicle Rental System </div>
 <ul>
 <li>Designed and structured relational database schemas, ER diagrams, and applied 3NF normalization.</li>
 <li>Implemented secure SQL queries and optimized data tables for backend operations.</li>
 </ul>
+
+<br>
+<!-- Project 2: Time-Series & Statistical Modeling -->
+<div class="item-title">Time-Series & Statistical Analysis</div>
+<div class="item-subtitle">Advanced Data Analytics in R / RStudio</div>
+<ul>
+<li>Conducted time-series forecasting analyses utilizing statistical models such as SARIMA.</li>
+<li>Analyzed data trends and processed statistical insights using RStudio.</li>
+</ul>
+
+<br>
+<!-- Project 3: Power BI -->
 <div class="item-title">Data Analysis & Visualization Projects</div>
-<div class="item-subtitle">Academic Portfolios (2025 - 2026)</div>
+<div class="item-subtitle">Academic Portfolios </div>
 <ul>
 <li>Built interactive production performance dashboards using Power BI.</li>
-<li>Conducted time-series forecasting analyses utilizing statistical models in RStudio.</li>
+<li>Developed interactive data tracking systems and trend analysis portfolios.</li>
 </ul>
 </section>
+
 <!-- Technical Skills & Competencies (ทักษะสมรรถนะ) -->
 <section>
 <h2>Technical Skills & Competencies</h2>
@@ -155,13 +182,13 @@
 <span class="skill-tag">Power BI</span>
 </div>
 </section>
+
 <!-- Hobbies (งานอดิเรก) -->
 <section>
 <h2>Hobbies & Interests</h2>
 <ul>
-<li><strong>Digital Reading:</strong> Exploring digital novels, e-books, and webtoons on platforms like Meb.</li>
-<li><strong>Gaming:</strong> Playing strategic mobile titles and online cooperative games.</li>
-<li><strong>Creative Design:</strong> Experimenting with UI/UX layout trends, custom styling, and digital graphics.</li>
+<li><strong>Digital Reading:</strong> e-books, webtoons.</li>
+<li><strong>Gaming:</strong> Playing strategic mobile titles.</li>
 </ul>
 </section>
 </div>
